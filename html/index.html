@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HEX Unified HUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- UNIFIED HUD FRAME -->
+    <div id="hex-hud" class="hud hidden">
+
+        <!-- PLAYER HUD ROW -->
+        <div id="player-row" class="row">
+            <div class="block"><span class="label">HP</span><span id="health" class="value">100</span></div>
+            <div class="block"><span class="label">ARMOR</span><span id="armor" class="value">0</span></div>
+            <div class="block"><span class="label">HUNGER</span><span id="hunger" class="value">100</span></div>
+            <div class="block"><span class="label">THIRST</span><span id="thirst" class="value">100</span></div>
+            <div class="block"><span class="label">STRESS</span><span id="stress" class="value">0</span></div>
+            <div class="block"><span class="label">STAM</span><span id="stamina" class="value">100</span></div>
+        </div>
+
+        <!-- VEHICLE HUD ROW -->
+        <div id="vehicle-row" class="row hidden">
+            <div class="block large">
+                <span class="label">SPEED</span>
+                <span class="value"><span id="speed">0</span><span class="unit">KM/H</span></span>
+            </div>
+
+            <div class="block"><span class="label">FUEL</span><span id="fuel" class="value">0%</span></div>
+            <div class="block"><span class="label">ENGINE</span><span id="engine" class="value">0%</span></div>
+            <div class="block"><span class="label">RPM</span><span id="rpm" class="value">0</span></div>
+            <div class="block"><span class="label">GEAR</span><span id="gear" class="value">N</span></div>
+
+            <div class="pill" id="seatbelt-pill">SEATBELT</div>
+            <div class="pill" id="cruise-pill">CRUISE</div>
+            <div class="pill" id="lights-pill">LIGHTS</div>
+            <div class="pill" id="highbeams-pill">HIGH</div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
